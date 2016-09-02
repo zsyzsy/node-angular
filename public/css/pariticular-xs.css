@@ -1,0 +1,59 @@
+html .show1{
+    display: block;
+}
+.head{
+    height: 6.25rem;
+    clear: both;
+    background: #F4F4F4;
+    position: relative;
+}
+.head-left{
+    margin-top: 1.5625rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: url("/images/navigation.png")no-repeat -6.5rem 0.625rem;
+    float: left;
+}
+.head-right{
+    margin-top: 1.5625rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    float: right;
+    background: url("/images/navigation.png")no-repeat -15.4375rem -2.875rem;
+}
+.head-content{
+    line-height: 6.25rem;
+    width: 12.5rem;
+    height: 6.25rem;
+    margin: 0 auto;
+}
+.yidong{
+    width: 100%;
+    background: #c1c1c1;
+}
+.im2{
+    width: 100%;
+}
+.im2 img{
+    width: 100%;
+}
+.pinglun{
+    width: 100%;
+}
+.pinglun div{
+    width: 100%;
+
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 10px;
+}
+.huifu{
+    color: #ff0000;
+}
+.riqi{
+    width:5.3125rem;
+}
+
+/*底部*/
+.footer{
+    text-align: center;
+}

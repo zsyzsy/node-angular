@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)" href="../../../css/login.css"/>
+    <!--<link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and (max-width:1000px)" href="../index-md.css"/>-->
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width:768px" href="../../../css/login-xs.css"/>
+    <style>
+        .show1{
+            display: none;
+        }
+        .show{
+            display: none;
+        }
+    </style>
+    <script src="../../html5shiv.min.js"></script>
+</head>
+<body>
+<!--PC-->
+<div class="show1">
+    <div class="container">
+        <div class="head">
+            <img src="../../../images/logo.png"  alt=""/>
+        </div>
+        <!--中间-->
+        <div class="content">
+            <div class="content-left">
+                <img src="../../../images/login-1.png"  alt=""/>
+            </div>
+            <div class="content-right">
+                <h2>其他登录方式</h2>
+                <div class="qita">
+                    <ul>
+                        <li class="img1"></li>
+                        <li class="img2"></li>
+                        <li class="img3"></li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <img src="../../../images/login-2.jpg"  alt=""/>
+                    <p>微信加关注 享专属优惠</p>
+                </div>
+            </div>
+            <div class="content-content">
+                <h1>账户登录</h1>
+                <div class="content-height">
+                    <div class="input"><input type="text" id="username" ng-model="username" placeholder="帐号/邮箱/手机"/></div>
+                    <p></p>
+                </div>
+                <div class="content-height" >
+                    <div class="input">
+                        <input type="password" id="password" ng-model="password" placeholder="密码"/></div>
+                    <p></p>
+                </div>
+                <div class="content-height">
+                    <div class="input"><input type="text" placeholder="验证码"/><img src="../../../images/yanzhengma.png" alt=""/></div>
+                    <p><span> </span><span class="text-right"><b>忘记密码？</b></span></p>
+                </div>
+                <div class="btn">
+                    <div class="btn-left"><input type="button" ng-click="login()" id="login" value="登录"/></div>
+                    <div class="btn-right"><a href="#/reg">
+                            <input type="button"  id="reg" value="免费注册"/></a></div>
+                    <p class="btn-text">Copyright(C) 2015 by www.anta.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--手机-->
+<div class="show">
+    <div class="head-bg">
+        <img src="../../../images/anta_logo.png" alt=""/>
+    </div>
+    <div>
+        <h2>账户登录</h2>
+        <div class="input"><input type="text" name="name" ng-model="username" placeholder="账号/手机/邮箱"/></div>
+        <div class="input"><input type="password" ng-model="password" placeholder="密码"/></div>
+        <div class="input"><input type="text" placeholder="验证码"/><img src="../../../images/yanzhengma.png" alt=""/></div>
+        <h2>其他登录方式</h2>
+        <ul>
+            <li class="img1"></li>
+            <li class="img2"></li>
+            <li class="img3"></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="../../jquery-1.11.3.min.js"></script>
+<!--<script src="js/js/login.js"></script>-->
+<!--<script>-->
+    <!--$(function(){-->
+        <!--$("input:button").click(function(){-->
+<!--//            console.log($("#username").val());-->
+<!--//            alert($("#password").val());-->
+            <!--$.ajax({-->
+                <!--type:"post",-->
+                <!--url:"/users/login",-->
+                <!--data:{username:$("#username").val(),password:$("#password").val()},-->
+                <!--success:function(isLogin){-->
+                    <!--if(isLogin){-->
+                        <!--console.log(isLogin);-->
+                        <!--window.location="../index/index.html";-->
+                    <!--}else{-->
+                        <!--alert("登录失败");-->
+                    <!--}-->
+                <!--}-->
+            <!--})-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+</html>

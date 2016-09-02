@@ -1,0 +1,52 @@
+*{
+    font-size: 1rem;
+}
+
+html .show1{
+    display: block;
+}
+.fudong{
+    height: 60px;
+    clear: both;
+}
+.left{
+    float: left;
+}
+ td{
+    border: .1rem solid #cccccc;
+}
+.color td:hover,.cima td:hover{
+    cursor: pointer;
+    border: 0.1rem solid #ff0000;
+    border-radius: 0.3rem;
+}
+.cima td{
+    text-align: center;
+    width: 2rem;
+}
+.shuliang input{
+    text-align: center;
+    width: 2rem;
+}
+.shuliang td{
+    border: none;
+    outline: none;
+}
+.btn{
+    width: 40.625rem;
+    height: 3.375rem;
+    margin: 0.8rem auto 0;
+}
+.btn input{
+    color: #ffffff;
+    width: 18.75rem;
+    height:3.375rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: #00bc00;
+}
+.btn input:hover{
+    cursor: pointer;
+    background: red;
+
+}

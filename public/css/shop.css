@@ -1,0 +1,175 @@
+*{
+    /*outline: 1px solid #ff0000;*/
+}
+html .show{
+    display: block;
+}
+.head{
+    width: 1300px;
+    height: 40px;
+    clear: both;
+    margin: 0 auto;
+    border-bottom: 2px solid #CCCCCC;
+}
+.head1{
+    width: 1300px;
+    height: 50px;
+    clear: both;
+    margin: 0 auto;
+}
+.head a{
+    color: #000000;
+    text-decoration: none;
+}
+.head a:hover{
+    color: red;
+}
+.head-left{
+    width: 500px;
+    height: 26px;
+    float: left;
+}
+.head-left p{
+    margin: 0;
+    padding: 0;
+}
+.head-right{
+    width: 350px;
+    height: 26px;
+    float: right;
+}
+.head-right table{
+    width: 100%;
+}
+/*中间*/
+.content{
+    width: 1150px;
+    height: 423px;
+    margin:  0 auto;
+}
+.xixi input{
+    text-align: center;
+}
+.xixi th{
+    background: #F5F5F5;
+}
+.xixi td{
+    padding: 0 20px;
+}
+.xixi table{
+    text-align: left;
+}
+.shopxi{
+    width: 360px;
+}
+.zongji{
+    background: #F5F5F5;
+    width: 1150px;
+    height: 252px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.zongji-left{
+    text-align: center;
+    line-height: 200px;
+    width: 220px;
+    float: left;
+}
+.zongji-left input{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    color: #4aff48;
+    background: #F5F5F5;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.zongji-left p{
+    margin: 0;
+}
+.zongji-left input:hover{
+    cursor: pointer;
+    background: #ff0000;
+}
+.zongji-right{
+    font-size: 18px;
+    width: 300px;
+    float: right;
+}
+.zongji-right th{
+    height: 36px;
+}
+.zongji-right tr th:first-child{
+    text-align: right;
+    width: 180px;
+    color: #000000;
+}
+.zongji-right tr th:last-child{
+    text-align: right;
+    width: 120px;
+    color: red;
+}
+.zongji-right div{
+    margin-top: 10px;
+}
+.zongji-right input{
+    font-size: 18px;
+    width: 145px;
+    height: 40px;
+    color: #000000;
+    border: none;
+    background: #F5F5F5;
+}
+.zongji-right input:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background: #ff0000;
+    border-radius: 10px;
+}
+/*底部*/
+
+.footer{
+    width: 1300px;
+    margin: 20px auto ;
+    overflow: hidden;
+    zoom: 1;
+    background: #F5F5F5;
+}
+.footer-left{
+    width: 887px;
+    height: 180px;
+    float: left;
+}
+.footer-left table{
+    text-align: left;
+    width: 100%;
+
+}
+.footer-left a{
+    color: #000000;
+    text-decoration: none;
+}
+.footer-left a:hover{
+    color: red;
+}
+.footer-right{
+    float: right;
+    width: 327px;
+    height: 177px;
+    background: url("/images/public.3.4.gif")no-repeat 0 -252px;
+    border-left:1px solid #CCCCCC ;
+}
+.footer-content{
+    width: 1300px;
+    height: 170px;
+    border-top:1px solid #CCCCCC ;
+}
+.tx{
+    text-align: center;
+    font-size: 16px;
+    width: 600px;
+    height: 100px;
+    margin: 20px auto;
+}

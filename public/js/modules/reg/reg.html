@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .show{
+            display:none
+        }
+        .show1{
+            display:none
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)" href="../../../css/reg.css"/>
+    <!--<link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and (max-width:1000px)" href="../index-md.css"/>-->
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width:768px" href="../../../css/reg-xs.css"/>
+</head>
+<body>
+
+<!--手机-->
+<div class="show">
+    <div class="head-bg">
+        <img src="../../../images/anta_logo.png" alt=""/>
+    </div>
+    <div>
+        <h2>注册帐号</h2>
+        <div class="btn"><input type="button" class="email" value="邮箱注册"/><input type="button" class="phone" value="手机注册"/></div>
+        <div class="input"><input type="text" class="youxiang" ng-model="username" ng-blur="blurUsername()" placeholder="邮箱"/></div><span ng-style="{color:userColor}">{{userLabel}}</span>
+        <!--<div class="hidd1">-->
+            <!--<div class="input"><input type="text" placeholder="手机号"/></div>-->
+            <!--<div class="input"><input type="text" placeholder="手机验证码"/><input type="button" id="phoneBtn" value="发送验证码"/></div>-->
+        <!--</div>-->
+        <div class="input"><input type="password" class="password" ng-blur="blurPwd()" ng-model="password" placeholder="密码"/></div><span ng-style="{color:pwdColor}">{{pwdLabel}}</span>
+        <div class="input"><input type="password" ng-model="cofig" ng-blur="blurcofig()" placeholder="请确认密码"/></div><span ng-style="{color:cofigColor}">{{cofigLabel}}</span>
+        <div class="input">
+            <div class="yan">
+                <input type="text"  placeholder="验证码" ng-model="yan" ng-blur="bluryan()" /></div>
+                <img src="../../../images/yanzhengma.png" alt=""/>
+        </div><span ng-style="{color:yanColor}">{{yanLabel}}</span>
+        <div class="reg"><input type="button" ng-click="reg()" class="zcBtn" value="注册"/></div>
+        <div class="text"><a href="">我已有账号，现在登录</a></div>
+        <h2>其他登录方式</h2>
+        <ul>
+            <li class="img1"></li>
+            <li class="img2"></li>
+            <li class="img3"></li>
+        </ul>
+    </div>
+</div>
+<!--PC-->
+<div class="show1">
+        <div class="container">
+            <div class="head">
+                <img src="../../../images/logo.png"  alt=""/>
+            </div>
+            <!--中间-->
+            <div class="content">
+                <div class="content-left">
+                    <img src="../../../images/login-1.png"  alt=""/>
+                </div>
+                <div class="content-right">
+                    <h2>其他登录方式</h2>
+                    <div class="qita">
+                        <ul>
+                            <li class="img1"></li>
+                            <li class="img2"></li>
+                            <li class="img3"></li>
+                        </ul>
+                    </div>
+                    <div class="img">
+                        <img src="../../../images/login-2.jpg"  alt=""/>
+                        <p>微信加关注 享专属优惠</p>
+                    </div>
+                </div>
+                <div class="content-content">
+                        <h2>注册账号</h2>
+                        <div class="btn"><input type="button" class="email" value="邮箱注册"/><input type="button" class="phone" value="手机注册"/></div>
+                        <p></p>
+                    <div class="input"><input type="text" name="youxiang" ng-model="username" ng-blur="blurUsername()" class="youxiang" placeholder="邮箱"/></div><span ng-style="{color:userColor}">{{userLabel}}</span>
+                    <!--<div class="hidd1">-->
+                        <!--<div class="input"><input type="text" placeholder="手机号"/></div>-->
+                        <!--<div class="input"><input type="text" placeholder="手机验证码"/><input type="button" id="phoneBtn1" value="发送验证码"/></div>-->
+                    <!--</div>-->
+                    <div class="input"><input type="password" name="password" class="password" ng-blur="blurPwd()" ng-model="password" placeholder="密码"/></div><span ng-style="{color:pwdColor}">{{pwdLabel}}</span>
+                    <div class="input"><input type="password" name="password1" ng-model="cofig" ng-blur="blurcofig()" class="password1" placeholder="请确认密码"/></div><span ng-style="{color:cofigColor}">{{cofigLabel}}</span>
+                    <div class="input"><input type="text" class="yanz" ng-model="yan" ng-blur="bluryan()" placeholder="验证码"/><img src="../../../images/yanzhengma.png" alt=""/></div><span ng-style="{color:yanColor}">{{yanLabel}}</span>
+                    <div class="reg"><input type="button" class="zcBtn" ng-click="reg()"  value="注册"/></div>
+                    <div class="text"><a href="">我已有账号，现在登录</a></div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+</body>
+<script src="../../jquery-1.11.3.min.js"></script>
+<!--<script>-->
+    <!--$(function() {-->
+        <!--//切换邮箱注册和手机账号注册-->
+        <!--$(".email").click(function () {  //切换邮箱注册-->
+            <!--//alert(1);-->
+            <!--$(".email").css({-->
+                <!--color: "white",-->
+                <!--backgroundColor: "red"-->
+            <!--});-->
+            <!--$(".phone").css({-->
+                <!--backgroundColor: "#cccccc",-->
+                <!--color: "black"-->
+            <!--});-->
+            <!--$(".hidd1").hide();-->
+            <!--$(".hidd").show();-->
+        <!--});-->
+        <!--//切换手机注册-->
+        <!--$(".phone").click(function () {-->
+            <!--//alert(1);-->
+            <!--$(".phone").css({-->
+                <!--color: "white",-->
+                <!--backgroundColor: "red"-->
+            <!--});-->
+            <!--$(".email").css({-->
+                <!--backgroundColor: "#cccccc",-->
+                <!--color: "black"-->
+            <!--});-->
+            <!--$(".hidd").hide();-->
+            <!--$(".hidd1").show();-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+<!--<script>-->
+    <!--$(function(){-->
+        <!--$(".youxiang").blur(function(){-->
+            <!--$.ajax({-->
+                <!--type:"post",-->
+                <!--url:"/users/validateName",-->
+                <!--data:{name:$(".youxiang").val()},-->
+                <!--success:function(data){-->
+                    <!--console.log(data);-->
+                    <!--if(data){-->
+                        <!--$(".tishi").html("可用").css("color","green");-->
+                    <!--}else{-->
+                        <!--$(".tishi").html("不可用").css("color","red");-->
+                    <!--}-->
+                <!--}-->
+            <!--});-->
+        <!--});-->
+<!--//密码-->
+        <!--$("input[name=password]").blur(function(){-->
+            <!--if(/^[0-9a-zA-Z]{6,}$/.test($("input[name=password]").val())){-->
+                <!--$(".ts1").html("正确").css("color","green");-->
+                <!--alert($("input[name=password]").val())-->
+            <!--}else{-->
+                <!--$(".ts1").html("输入错误").css("color","red");-->
+                <!--alert($("input[name=password]").val())-->
+            <!--}-->
+        <!--});-->
+<!--//        再次验证密码-->
+        <!--$("input[name=password1]").blur(function(){-->
+            <!--if(($("input[name=password1]").val())===($("input[name=password]").val())){-->
+                <!--$(".ts2").html("正确").css("color","green");-->
+            <!--}else{-->
+                <!--$(".ts2").html("输入错误").css("color","red");-->
+            <!--}-->
+        <!--});-->
+<!--//        验证码-->
+        <!--$(".yanz").blur(function(){-->
+            <!--if(($(".yanz").val())==8389){-->
+                <!--$(".ts3").html("正确").css("color","green");-->
+            <!--}else{-->
+                <!--$(".ts3").html("输入错误").css("color","red");-->
+            <!--}-->
+        <!--});-->
+
+
+        <!--$(".zcBtn").click(function(){-->
+
+                <!--$.ajax({-->
+                    <!--type:"post",-->
+                    <!--url:"/users/reg",-->
+                    <!--data:{-->
+                        <!--name:$("input[name=youxiang]").val(),pwd:$("input[name=password]").val()},-->
+                    <!--success:function(data){-->
+                        <!--alert(data);-->
+                        <!--window.location="../login/login.html";-->
+                    <!--}-->
+                <!--})-->
+
+        <!--});-->
+    <!--});-->
+
+
+<!--</script>-->
+</html>

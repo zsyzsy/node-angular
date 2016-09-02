@@ -1,0 +1,169 @@
+html .show1{
+    display: block;
+}
+.head{
+    height: 100px;
+    clear: both;
+    background: #F4F4F4;
+    position: relative;
+}
+.head-left{
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    background: url("/images/navigation.png")no-repeat -104px 10px;
+    float: left;
+}
+.head-right{
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    background: url("/images/navigation.png")no-repeat -247px -46px;
+}
+.head-right table{
+    text-align: center;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background: #ffffff;
+}
+.head-right a{
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+.th1{
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -119px -46px;
+}
+.th1:hover{
+    cursor: pointer;
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -312px 4px;
+}
+.th2{
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat 0 -46px;
+}
+.th2:hover{
+    cursor: pointer;
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -308px -45px;
+}
+.th3{
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -60px -47px;
+}
+.th3:hover{
+    cursor: pointer;
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -310px -95px;
+}
+.th4{
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -172px -46px;
+}
+.th4:hover{
+    cursor: pointer;
+    padding:0 50px 33px 0;
+    background: url("/images/navigation.png")no-repeat -313px -145px;
+}
+.head-content{
+    line-height: 100px;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+
+}
+/*中间*/
+.container{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+.left{
+    width: 600px;
+    height: 65px;
+    float: left;
+    background: #78787b;
+    border: 1px solid #CCCCCC;
+}
+.left input{
+    font-size: 20px;
+    background: #78787b;
+    width: 500px;
+    height: 62px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.img{
+    padding: 0 7px 4px 18px;
+    background: url("/images/index-icon.png") no-repeat -45px -165px;
+}
+.right{
+    width: 130px;
+    height: 65px;
+    background: #CCCCCC;
+    line-height: 65px;
+    text-align: center;
+    float: right;
+}
+.right input{
+    font-size: 25px;
+    color: #ff2101;
+    width: 130px;
+    height: 62px;
+    background: #CCCCCC;
+    border: none;
+    outline: none;
+}
+.right input:hover{
+    cursor: pointer;
+}
+.biaoti table{
+    text-align: center;
+    background: #ffffff;
+    height: 100px;
+    width: 100%;
+}
+.biaoti a{
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+}
+.biaoti td{
+    width: 33.333%;
+}
+.biaoti a:hover{
+    cursor: pointer;
+   border: 1px solid #CCCCCC;
+    border-radius:10px;
+    background: #78787b;
+}
+.shop{
+    text-align: center;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+.shop div{
+    width: 100%;
+    border-bottom:1px solid #CCCCCC ;
+}
+.red{
+    font-size: 25px;
+    color: #EB4444;
+}
+.footer{
+    text-align: center;
+}
