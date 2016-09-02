@@ -1,2 +1,2 @@
 # node-angular-
-简单的一个网站
+node+angular构建简单的一个电商网站
